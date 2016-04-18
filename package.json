@@ -1,6 +1,6 @@
 {
   "name": "idcapp-service",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Service for the Capita IDC App",
   "main": "server.js",
   "dependencies": {
