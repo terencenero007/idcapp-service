@@ -9,7 +9,7 @@ nconf.env()
 
 // ping API
 app.get('/ping', function (req, res) {
-  res.send('Hello World');
+  res.send('Hello World...');
 });
 
 // Listen http server on configured  port
