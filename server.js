@@ -12,7 +12,7 @@ app.get('/ping', function (req, res) {
   res.send('Hello World');
 });
 
-abb...
+abc........
 
 // Listen http server on configured  port
 app.listen(process.env.PORT || nconf.get('NODE_SERVER_PORT'), function () {
