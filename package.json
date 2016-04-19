@@ -4,16 +4,16 @@
   "description": "Service for the Capita IDC App",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "nconf": "^0.8.4"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "/ping",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "idcapp-service"
+    "url": "https://Dhanushdasan@bitbucket.org/Dhanushdasan/idcapp-service.git"
   },
   "keywords": [
     "capita",
