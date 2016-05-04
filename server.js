@@ -30,7 +30,7 @@ app.get('/add/:number1/:number2', function (req, res) {
   var number1 = parseInt(req.params.number1);
   var number2 = parseInt(req.params.number2);
   
-  res.send(number1 + ' + ' + number2 + ' is ' + new myMath().add(number1, number2));
+  res.send(number1 + ' + ' + number2 + ' equal to ' + new myMath().add(number1, number2));
 });
 
 // Listen http server on configured  port
