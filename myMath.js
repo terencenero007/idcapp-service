@@ -8,7 +8,7 @@ var MyMath = function () {};
 
 // Mthod to add given two numbers
 MyMath.prototype.add = function(a, b) {
-  return a + b;
+  return a - b;
 };
 
 module.exports = MyMath;
