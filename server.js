@@ -6,7 +6,7 @@ var app = express();
 var nconf = require('nconf');
 nconf.env()
    .file({file: './config.json'});
-
+var
 // default GET API
 app.get('/', function (req, res) {
   res.send('idcapp is up...');
