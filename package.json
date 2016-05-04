@@ -16,7 +16,7 @@
     "mocha": "^2.4.5"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
