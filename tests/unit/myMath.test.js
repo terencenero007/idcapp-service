@@ -7,7 +7,7 @@ var chai = require('chai');
 var expect = chai.expect; 
 
 // Load math class to test
-var myMath = require('./myMath');
+var myMath = require('../../src/myMath');
 
 // test1
 describe('MyMath', function() {
