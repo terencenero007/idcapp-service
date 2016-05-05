@@ -11,4 +11,9 @@ MyMath.prototype.add = function(a, b) {
   return a + b;
 };
 
+// Mthod to sub given two numbers
+MyMath.prototype.sub = function(a, b) {
+  return a - b;
+};
+
 module.exports = MyMath;
