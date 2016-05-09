@@ -12,8 +12,9 @@ var nconf = require('nconf');
 nconf.env()
   .file({ file: __dirname + '/config.json' });
 
-// Load math class
+// Load services
 var myMath = require('./myMath');
+var messageService = require('./services/messageService');
 
 // default GET API
 app.get('/', function (req, res) {
@@ -39,6 +40,11 @@ app.get('/sub/:number1/:number2', function (req, res) {
   var number2 = parseInt(req.params.number2);
 
   res.send(number1 + ' - ' + number2 + ' equal to ' + new myMath().sub(number1, number2));
+});
+
+// API to get messages
+app.get('/messages', function (req, res) {
+  return res.json(messageService.getMessages());
 });
 
 // Listen http server on configured  port
