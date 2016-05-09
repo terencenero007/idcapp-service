@@ -2,12 +2,12 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     jshint: {
-      files: ['gruntfile.js', '*.js'],
+      files: ['Gruntfile.js', 'src/*.js','tests/**/*.test.js'],
     },
     // Mocha
     mochaTest: {
       all: {
-        src: ['myMathTest.js'],
+        src: ['tests/unit/*.test.js'],
       },
       options: {
         run: true

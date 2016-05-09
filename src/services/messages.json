@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1",
+        "title": "IDC Townhall",
+        "content": "On June 15th 4.30 PM to 5.30 PM in boardroom first floor",
+        "timestamp": "2016-04-31T08:15:30-05:00"
+    },
+    {
+        "id": "2",
+        "title": "Cultural Event",
+        "content": "On July 28th 1.30 PM to 6.30 PM in boardroom first floor",
+        "timestamp": "2016-05-05T08:15:30-05:00"
+    }
+]
