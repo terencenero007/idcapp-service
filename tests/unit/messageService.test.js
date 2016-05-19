@@ -16,7 +16,7 @@ var messageService = require('../../src/services/messageService');
 // Validate number of messages and its property keys
 describe('MessageService', function() {
   it('getMessages() should return 2 messages with "id", "title", "content", "timestamp" properties', function() {
-    var currentMessageCount = 2;  
+    var currentMessageCount = 3;  
     var messages = messageService.getMessages();
     expect(messages).to.have.lengthOf(currentMessageCount);
     messages.should.all.include.keys(["id", "title", "content", "timestamp"]);  
