@@ -16,6 +16,14 @@ nconf.env()
 var myMath = require('./myMath');
 var messageService = require('./services/messageService');
 
+// Enable CORS
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+
 // default GET API
 app.get('/', function (req, res) {
   res.send('IDC App is up...');
