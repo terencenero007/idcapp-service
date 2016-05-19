@@ -10,5 +10,11 @@
         "title": "Cultural Event",
         "content": "On July 28th 1.30 PM to 6.30 PM in boardroom first floor",
         "timestamp": "2016-05-05T08:15:30-05:00"
+    },
+    {
+        "id": "3",
+        "title": "SIMS Primary Demo Preparation",
+        "content": "On March 3rd at 10.30 AM in some God forsaken place in Bedford",
+        "timestamp": "2016-03-15T08:15:30-05:00"
     }
 ]
