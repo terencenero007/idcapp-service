@@ -12,12 +12,6 @@ var messages = require('./messages.json');
 // Method to fetch all the messages in the system
 // Return temporary message data for now
 MessageService.prototype.getMessages = function() {
-    var sortAttrib = "timestamp"; //TODO: Ask do we need to pass a sort param to the service?
-    
-    messages.sort(function(evtA, evtB){
-       return evtA[sortAttrib] - evtB[sortAttrib]; 
-    });
-    
     return messages;
 };
 
