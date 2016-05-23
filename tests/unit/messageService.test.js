@@ -19,8 +19,8 @@ describe('MessageService', function() {
     var messages = messageService.getMessages();
     messages.should.all.include.keys(["id", "title", "content", "timestamp"]);  
   });
-  it('Maximum length of title in each message should be 20', function() {
-    var maximunTitleLength = 20;
+  it('Maximum length of title in each message should be 30', function() {
+    var maximunTitleLength = 30;
     var messages = messageService.getMessages();
     messages.forEach(function(message) {
       expect(message).to.have.property('title').with.length.of.at.most(maximunTitleLength);
