@@ -13,13 +13,18 @@ var messageService = require('../../src/services/messageService');
 
 // test1
 // Currently messageService is returning temporary data. 
-// Validate number of messages and its property keys
+// Validate properties and legth of the title for now
 describe('MessageService', function() {
-  it('getMessages() should return 2 messages with "id", "title", "content", "timestamp" properties', function() {
-    var currentMessageCount = 2;  
+  it('Each message should have "id", "title", "content", "timestamp" properties', function() {
     var messages = messageService.getMessages();
-    expect(messages).to.have.lengthOf(currentMessageCount);
     messages.should.all.include.keys(["id", "title", "content", "timestamp"]);  
+  });
+  it('Maximum length of title in each message should be 20', function() {
+    var maximunTitleLength = 20;
+    var messages = messageService.getMessages();
+    messages.forEach(function(message) {
+      expect(message).to.have.property('title').with.length.of.at.most(maximunTitleLength);
+    });
   });
 });
 
