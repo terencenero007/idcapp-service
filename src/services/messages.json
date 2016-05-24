@@ -16,5 +16,11 @@
         "title": "SIMS Primary Demo Preparation",
         "content": "On March 3rd at 10.30 AM in in Bedford",
         "timestamp": "2016-03-15T08:15:30-05:00"
+    },
+    {
+        "id": "4",
+        "title": "IDC App Demo",
+        "content": "On May 25th at 04.30 AM in in Pune",
+        "timestamp": "2016-05-26T08:15:30-05:00"
     }
 ]
