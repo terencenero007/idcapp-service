@@ -45,7 +45,8 @@ node('node') {
          sh 'node -v'
          sh 'npm prune'
          sh 'npm install'
-         sh 'npm test'
+         sh 'npm i -g grunt'
+         sh 'grunt test'
 
        }      
 
