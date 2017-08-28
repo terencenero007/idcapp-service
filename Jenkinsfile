@@ -26,7 +26,8 @@ THE SOFTWARE.
 
 node('node') {
 
-
+    def nodeHome = tool 'node'
+    env.PATH="${env.PATH}:${nodeHome}/bin"
     currentBuild.result = "SUCCESS"
 
     try {
