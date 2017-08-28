@@ -1,10 +1,6 @@
 #!/usr/bin/env groovy
 pipeline { 
-  agent { 
-    node { 
-      label 'any'
-    }
-  }
+  agent any
   tools {
     nodejs 'nodejs'
   }
