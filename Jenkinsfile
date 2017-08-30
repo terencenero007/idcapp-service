@@ -30,6 +30,18 @@ pipeline {
         sh "grunt test"
       }
     }
+    stage('Docker build') {
+        steps {
+            sh 'env'
+            sh "docker build -t localhost:5000/${env.JOB_NAME}:${env.BUILD_NUMBER}.0 ."
+        }
+    }
+    stage('Docker push') {
+        steps {
+            sh 'env'
+            sh "docker push localhost:5000/${env.JOB_NAME}:${env.BUILD_NUMBER}.0"
+        }
+    }
     stage ('Clean') {
       steps {
         sh "npm prune"
