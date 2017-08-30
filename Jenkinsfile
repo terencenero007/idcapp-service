@@ -11,13 +11,6 @@ pipeline {
         checkout scm
       }
     }
-    stage ('Verify Tools'){
-      steps {
-        parallel (
-          node: { sh "npm -v" }
-        )
-      }
-    }
     stage ('Build app') {
       steps {
         sh "npm prune"
