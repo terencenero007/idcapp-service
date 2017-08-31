@@ -24,7 +24,7 @@ pipeline {
     }
     stage('Nexus login') {
         steps {
-            sh 'docker login localhost:5000 -u admin -p admin123'
+            sh 'sudo docker login localhost:5000 -u admin -p admin123'
         }
     }
     stage('Docker build') {
