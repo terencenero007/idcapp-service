@@ -4,7 +4,7 @@ WORKDIR /app
 
 ADD package.json /app/package.json
 RUN npm config set registry http://registry.npmjs.org
-RUN npm ls --prod
+RUN npm install && npm ls --prod
 RUN mv /app/node_modules /node_modules
 
 ADD . /app
