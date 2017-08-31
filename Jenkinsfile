@@ -22,6 +22,11 @@ pipeline {
         sh "grunt test"
       }
     }
+    stage('Nexus login') {
+        steps {
+            sh 'docker login localhost:5000 -u admin -p admin123'
+        }
+    }
     stage('Docker build') {
         steps {
             sh 'env'
